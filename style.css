@@ -1,0 +1,48 @@
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+
+.keys { 
+
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.key {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    transition:all 100ms;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.8px);
+    -webkit-backdrop-filter: blur(1.8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc500;
+    
+}
+
+.key:hover{
+    border: 1px blue solid;
+    transition: 500ms;
+}
+
+.Txt {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 90px;
+}
